@@ -1,0 +1,20 @@
+[
+	{
+		"ID_PERFIL": 1,
+		"NOMBRE_PERFIL": "Perfil 1",
+		"DESCRIPCION_PERFIL": "Descripcion de Perfil 1",
+		"ESTADO_PERFIL": "1"
+	},
+	{
+		"ID_PERFIL": 2,
+		"NOMBRE_PERFIL": "Perfil 2",
+		"DESCRIPCION_PERFIL": "Descripcion de perfil 2",
+		"ESTADO_PERFIL": "1"
+	},
+	{
+		"ID_PERFIL": 3,
+		"NOMBRE_PERFIL": "Perfil 3",
+		"DESCRIPCION_PERFIL": "Descripcion de perfil 3",
+		"ESTADO_PERFIL": "1"
+	}
+]

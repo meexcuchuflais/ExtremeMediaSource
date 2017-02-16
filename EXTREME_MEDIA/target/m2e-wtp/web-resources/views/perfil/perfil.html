@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="styleSheet" href="http://ui-grid.info/release/ui-grid.min.css" />
+<link rel="styleSheet" href="style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-touch.min.js"></script>
+<script src="http://ui-grid.info/release/ui-grid.js"></script>
+<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+
+
+
+<script src="PerfilController.js"></script>
+
+</head>
+
+<body ng-app="perfil">
+
+	<div ng-controller="MainCtrl as vm">
+		<div style="padding-left: 30px;">
+			<button type="button" id="addRow" class="btn btn-success" ng-click="addRow()">Agregar Perfil</button>
+		</div>
+		<br />
+		<div id="serviceGrid" 
+		ui-grid-move-columns 
+		ui-grid-selection
+		ui-grid-resize-columns
+		
+		ui-grid-pinning
+		ui-grid-exporter 
+		ui-grid-auto-resize
+		
+		ui-grid-edit
+		ui-grid="vm.serviceGrid" class="influxGrid"></div>
+	</div>
+	
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript">
+			var defaultCSS = document.getElementById('bootstrap-css');
+			/*
+			            function changeCSS(css) {
+			                if (css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="' + css + '" type="text/css" />');
+			                else $('head > link').filter(':first').replaceWith(defaultCSS);
+			            }*/
+		</script>
+	</head>
+
+	<body>
+		<div class="row affix-row cb-container-content"">
+			<div class="col-sm-3 col-md-2 affix-sidebar">
+
+				<div id="menu-main">
+					<div class="wf-overlay" ng-click="toggleMenuMain()"></div>
+					<div class="wf-content" ng-class="enabledClass">
+						<div class="list-group" ng-class="parentMenuItem? 'wf-menu--1' : 'wf-menu-0'">
+							<div ng-repeat="item in collectionMenus">
+								<!--<a href="javascript://" class="list-group-item" ng-class="{active:item.url=='#'+location.path()}" ng-if="item.url && !item.hidden" ng-click="setView(item)">{{ item.name }}</a>-->
+								<div class="list-group" ng-if="item.children">
+									<div class="list-group-heading" ng-if="!item.url && !item.hidden">{{ item.name }}</div>
+									<a href="javascript://" class="list-group-item" ng-repeat="subItem in item.children" ng-class="{active:subItem.url=='#'+location.path()}" ng-if="!subItem.hidden" ng-click="subItem.children && subItem.children.length>0? setParentMenuItem(subItem) : setView(subItem)"><span ng-if="subItem.children && subItem.children.length>0" style="line-height:19px;" class=""></span><span class="itemText">{{ subItem.name }} {{enableContainer}}</span></a>
+									<span ng-if="subItem.children && subItem.children.length>0" style="line-height:19px;" class=""></span>
+                                <span class="itemText">{{ subItem.name }} {{enableContainer}}</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="list-group sub-menu" ng-class="parentMenuItem? 'wf-menu-0' : 'wf-menu-1'">
+							<div class="list-group">
+								<a href="javascript://" style="margin-top:10px;" class="list-group-item sub-menu" ng-click="setParentMenuItem(null)"><span class="fa fa-angle-left"></span> 
+								<span>Atr&aacute;s</span></a>
+								<div ng-repeat="item in parentMenuItem.children">
+									<a href="javascript://" class="list-group-item" ng-class="{active:isActive(item)}" ng-if="item.url && !item.hidden" ng-click="setView(item)">
+									<span>{{ item.name | lowercase }}</span></a>
+									<div class="list-group" ng-if="item.children" ng-show="item.children.length>0">
+										<div class="list-group-heading" ng-if="!item.url && !item.hidden">{{ item.name }}</div>
+										<a href="javascript://" class="list-group-item" ng-repeat="subItem in item.children" ng-class="{active:isActive(subItem)}" ng-if="!subItem.hidden" ng-click="setView(subItem)"><span>{{ subItem.name | lowercase }}</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-sm-9 col-md-10 affix-content cb-section-container-iframe">
+				<div class="cb-container-iframe">
+					<iframe class="embed-responsive-item cb-iframe" name="shellTab{{shellTab.id}}" ng-class="" ng-load="" ng-src="{{shellTab.url}}" id="mainIframe" style="background-color: white"></iframe>
+				</div>
+			</div>
+		</div>
+		<script type="text/ng-template" id="warning-dialog.html">
+    <div class="modal-header">
+        <h3 translate>MODAL TITLE</h3>
+    </div>
+    <div idle-countdown="countdown" class="modal-body">
+        <progressbar max="60" value="60" animate="true" class="progress-striped active"><span translate>CWC.SECURITY.IDLE.TITLES.MODAL_IDLE_PROGRESS_BAR</span>{{countdown}} <span translate>CWC.SECURITY.IDLE.TITLES.MODAL_IDLE_PROGRESS_TIME</span>
+        </progressbar>
+    </div>
+
+</script>
+</body>
+</html>

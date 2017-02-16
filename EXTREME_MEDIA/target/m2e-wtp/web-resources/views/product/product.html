@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h2>Vertical (basic) form</h2>
+		<div class="container">
+			<h1>User detail</h1>
+
+			<div class="span6">
+				<table class="table table-striped table-condensed">
+					<thead>
+						<tr>
+							<th style="min-width: 80px;">First name</th>
+							<th style="min-width: 80px;">Last name</th>
+							<th style="width: 20px;"></th>
+							<th style="width: 20px;"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="user in users">
+							<td>{{ user.firstName }}</td>
+							<td>{{ user.lastName }}</td>
+							<td><a ng-click="editUser(user.id)"
+								class="btn btn-small btn-primary">edit</a></td>
+							<td><a ng-click="deleteUser(user.id)"
+								class="btn btn-small btn-danger">delete</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<a ng-click="createNewUser()" class="btn btn-small">create new user</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

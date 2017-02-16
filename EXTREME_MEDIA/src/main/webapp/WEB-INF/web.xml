@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_9" version="3.0"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>Archetype Created Web Application</display-name>
+	<listener>
+		<listener-class>com.extreme.media.ex.core.LogConfiguration</listener-class>
+	</listener>
+	<listener>
+		<listener-class>org.apache.logging.log4j.web.Log4jServletContextListener</listener-class>
+	</listener>
+	<filter>
+		<filter-name>log4jServletFilter</filter-name>
+		<filter-class>org.apache.logging.log4j.web.Log4jServletFilter</filter-class>
+	</filter>
+
+	<context-param>
+		<param-name>EMW_HOME</param-name>
+		<param-value>C:/EM_HOME_WEB</param-value>
+	</context-param>
+	<context-param>
+		<param-name>APP_NAME</param-name>
+		<param-value>EXTREME_MEDIA</param-value>
+	</context-param>
+	<context-param>
+		<param-name>log4jConfiguration</param-name>
+		<param-value>file:///C:/EM_HOME_WEB/EXTREME_MEDIA/infrastructure/em-log-config.xml</param-value>
+	</context-param>
+</web-app>

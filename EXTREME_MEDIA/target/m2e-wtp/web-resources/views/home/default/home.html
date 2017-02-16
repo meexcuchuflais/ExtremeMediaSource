@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="robots" content="noindex">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            var defaultCSS = document.getElementById('bootstrap-css');
+
+            function changeCSS(css) {
+                if (css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="' + css + '" type="text/css" />');
+                else $('head > link').filter(':first').replaceWith(defaultCSS);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="row affix-row">
+            <div class="col-sm-4 col-md-3 affix-sidebar">
+                <div class="sidebar-nav">
+                    <div class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="visible-xs navbar-brand">Menu Principal</span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav" id="sidenav01">
+                                <li class="active">
+                                    <a href="javascript://" data-toggle="collapse" data-target="#toggleDemo0" data-parent="#sidenav01" class="collapsed">
+                                        <h4>
+                                    USER UNO
+                                    <br>
+                                    <small>Configuracion <span class="caret"></span></small>
+                                </h4>
+                                    </a>
+                                    <div class="collapse" id="toggleDemo0" style="height: 0px;">
+                                        <ul class="nav nav-list">
+                                            <li><a href="javascript://">Datos personales</a>
+                                            </li>
+                                            <li><a href="javascript://">Cambiar password</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li ng-repeat="item in collectionMenus.children">
+                                    <a href="javascript://" data-toggle="collapse" data-target="{{ '#div_'+item.id }}" data-parent="#sidenav01" class="collapsed">
+                                        <span>{{ item.name | uppercase }}</span> <span class="caret pull-right"></span>
+                                    </a>
+                                    <div class="collapse" id="{{ 'div_'+item.id }}" style="height: auto;" ng-repeat="subItem in item.children">
+                                        <ul class="nav nav-list">
+                                            <li ng-repeat="subItemD in item.children"><a href="javascript://" ng-click="setView(subItemD,subItemD.url)" home>{{subItemD.name}}</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li><a href="javascript://"><span class="glyphicon glyphicon-cog"></span> Notificaciones</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-9 affix-content">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" name="shellTab{{shellTab.id}}" ng-class="" ng-load="" ng-src="{{shellTab.url}}" id="mainIframe"></iframe>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        </script>
+
+
+    </body>
+
+    </html>
+</body>
+
+</html>

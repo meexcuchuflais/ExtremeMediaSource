@@ -1,0 +1,49 @@
+@theme-color: #3C67DD;
+@hover-color: #5683ff;
+@secondary-color: #3C67DD;
+@background-color: #FFF;
+@background-locked-color: #000;
+@text-color: #333;
+@text-btn-primary-color: #fff;
+@title-color: #283a85;
+@link-color: @secondary-color;
+@danger-color: #F00;
+@brand-color: #777;
+@brand-width: 40px;
+@container-header-border-color: #e3e3e3;
+@container-footer-border-color: #e3e3e3;
+@menu-main-width: 215px;
+@shell-background-color: #F5F5F5;
+@shell-border-color: #eee;
+@shell-text-color: #7E7E7E;
+@shell-heading-color: @text-color;
+@shell-link-hover-color: #f6f8f9;
+@flex-gutter: 20px;
+
+@screen-xs: 480px;
+@screen-sm1: 700px;
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+@screen-sm1: 700px;
+@screen-sm2: 767px;
+@screen-md1: 991px;
+@screen-lg1: 1199px;
+@shell-background-color: #FFF;
+@shell-border-color: #E5E5E5;
+@shell-text-color: #7E7E7E;
+@shell-heading-color: @text-color;
+@shell-link-hover-color: darken(@shell-background-color, 7%);
+
+.overlay() {
+    position: fixed;
+    top: 61px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s;
+    z-index: 1030;
+}

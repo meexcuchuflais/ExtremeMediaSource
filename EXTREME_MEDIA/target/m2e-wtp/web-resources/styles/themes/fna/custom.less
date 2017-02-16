@@ -1,0 +1,383 @@
+#shell {
+    transition: transform .4s;
+    width: 100%;
+    .wf-menu-main & {
+        @media (max-width: (@screen-sm1 - 1)) {
+            .transform(translateX(@menu-main-width));
+            position: fixed;
+            width: 100%;
+        }
+    }
+    > .wf-content {
+        .transition(transform .4s);
+        &.wf-fixed-top {
+            padding-top: 90px;
+        }
+        @media (min-width: @screen-md) {
+            body:not(.wf-login) & {
+                margin-left: @menu-main-width;
+            }
+            &.wf-fixed-top {
+                padding-top: 140px;
+            }
+            .wf-menu-main & {
+                position: fixed;
+                width: 100%;
+            }
+        }
+    }
+}
+#shell-head {
+    transition: transform .4s;
+    &.navbar-default {
+        background-color: @shell-background-color;
+        border-color: @shell-border-color;
+        .navbar-nav > li > a {
+            color: @shell-text-color;
+        }
+    }
+    .wf-login & {
+        transform: translateY(-100%);
+    }
+    .navbar-brand {
+        background: center center no-repeat;
+        background-image: url(images/logo.png);
+        width: @brand-width;
+        height: 40px;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-size: @brand-width;
+        line-height: 12px;
+        transition: text-indent .4s, opacity .4s;
+        text-indent: -190px;
+        &, &:hover, &:active, &:focus {
+            color: @brand-color;
+        }
+        @media (min-width: @screen-md) {
+            width: 86px;
+            height: 79px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 20px;
+            background-size: contain;
+        }
+    }
+    .navbar-fixed-top {
+        z-index: 10000;
+    }
+    .navbar-nav {
+        float: left;
+        margin: 0;
+        &.navbar-right {
+            margin-right: 0;
+        }
+        &.nav > li {
+            &.open > a {
+                background-color: @shell-link-hover-color;
+                color: @shell-text-color;
+            }
+            > a {
+                margin-top: 10px;
+                margin-bottom: 9px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                border-radius: 4px;
+                transition: background-color .4s;
+                &:hover {
+                    background-color: @shell-link-hover-color;
+                }
+                &:active,
+                &.active {
+                    background-color: darken(@shell-link-hover-color, 5%);
+                    box-shadow: 0 0 transparent;
+                }
+            }
+            > .dropdown-menu {
+                border-radius: 4px;
+                margin-top: -7px;
+            }
+        }
+    }
+    .navbar-form {
+        margin-top: 10px;
+        margin-bottom: 9px;
+        .form-control {
+            height: 40px;
+        }
+        .btn {
+            padding: 9px 12px;
+        }
+    }
+    #btn-menu-main {
+        padding: 11px 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        float: left;
+        border: 0;
+        position: relative;
+        z-index: 2;
+        .transition(background .3s, margin-left .3s);
+        @media (min-width: @screen-md) {
+            margin-left: -55px;
+            /*
+            .wf-menu-main-docked &,
+            .wf-home & {
+                margin-left: -55px;
+            }
+            */
+        }
+        .ic-bars {
+            display: block;
+            width: 12px;
+            .transform(translate3d(0, 0, 0));
+            &:before, &:after, .ic-middle {
+                background: @shell-text-color;
+                content: '';
+                display: block;
+                height: 2px;
+                margin: 3px 0;
+                .transition(all .2s ease-out);
+                width: 100%;
+            }
+            .ic-middle {
+                text-indent: -9999px;
+            }
+        }
+        .wf-menu-main & {
+            .ic-bars {
+                &:before {
+                    .transform(rotate(45deg) translate3d(4px, 3px, 0));
+                }
+                .ic-middle {
+                    opacity: 0;
+                }
+                &:after {
+                    .transform(rotate(-45deg) translate3d(4px, -3px, 0));
+                }
+            }
+        }
+    }
+    @media (min-width: @screen-md) {
+        height: 110px;
+        > .container-fluid {
+            display: flex;
+            align-items: center;
+        }
+        #app-title {
+            line-height: normal;
+        }
+        #user-options {
+            position: static;
+            margin-right: 20px;
+            flex-grow: 1;
+        }
+        .escudo {
+            position: static;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:630px){
+    .cb-text{
+        display:none;
+    }
+    /*
+    .wf-content.wf-fixed-top.wf-menu-main {
+        padding-left: 163px;
+    }
+    */
+}
+
+.cb-user {
+    color: @secondary-color !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+    margin-right: 35px;
+}
+
+.cb-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    text-align: right;
+    padding-right: 5px;
+    border-right: 1px @link-color dotted;
+}
+
+.cb-text1{
+    color:@secondary-color;
+    padding-left: 5px;
+    font-size: 7pt;
+    font-weight: bold;
+}
+
+.btnSalidaSegura {
+    width: 100px;
+    height: 25px;
+    display: inline-table;
+    cursor: pointer;
+    border: 0px;
+    background: url(images/btn_salida_segura.png) no-repeat;
+    float: right;
+    margin-top: 5px;
+}
+
+.userData {
+    float: right;
+    margin-right: 90px;
+    padding-top: 5px;
+}
+
+.bx-prev {
+    z-index: 999 !important;
+}
+
+
+.keyMobile{
+    display: block;
+}
+
+@media screen and (max-width : 400px) {
+    .keyNotMobile{
+        display:none;
+    }
+    .keyMobile{
+        display:block;
+    }
+}
+@media screen and (min-width : 401px) {
+    .keyNotMobile{
+        display: block;
+    }
+    .keyMobile{
+        display:none;
+    }
+}
+
+#btn-menu-main {
+    background: #FFF;
+}
+#app-title {
+    float: left;
+    line-height: 60px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: @secondary-color;
+}
+#user-options {
+    position: absolute;
+    right: 80px;
+    @media (max-width: (@screen-sm - 1)) {
+        right: 10px;
+    }
+}
+#btn-salida-segura {
+    &,
+    &:hover {
+        border-color: #374300;
+        color: #374300;
+        .background-image(linear-gradient(to bottom, #f5f9df 0%,#e2efa6 45%,#c4df3f 50%,#bcdb16 95%,#a1bc00 100%));
+        text-shadow: 1px 1px #FFF;
+    }
+    @media (max-width: (@screen-sm - 1)) {
+        .fa {
+            padding-right: 0;
+            border: 0;
+            margin-right: 0;
+        }
+    }
+    .fa {
+        color: @secondary-color;
+        border-right-color: @secondary-color;
+    }
+}
+
+#login-form > div > fieldset > div:nth-child(2) > span > span.k-widget.k-tooltip.k-tooltip-validation.k-invalid-msg{
+    display: none !important;
+}
+
+#login-form > div > fieldset > div:nth-child(3) > span{
+    display: none !important;
+}
+
+#login-form > div > fieldset > div:nth-child(4) > div.keyNotMobile > span{
+    display: none !important;
+}
+
+#login-form > div > fieldset > div:nth-child(2) > span.k-invalid > span.k-dropdown-wrap.k-state-default{
+    border-color: red !important;
+}
+
+/*****************************************************************/
+/***Cabecera***/
+div.izquierda{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    background-image: url("images/logo.png") ,url("images/fondo_virtual.png"), url("images/escudo-colombia.png");
+    background-repeat:no-repeat;
+    background-position:left top, center, right top;
+    height:100px;
+    //background-size: contain;
+}
+.escudo {
+    background-image: url(images/escudo-colombia.png);
+    width: 50px;
+    height: 45px;
+    background-size: 100%;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    @media (min-width: @screen-md) {
+        width: 81px;
+        height: 74px;
+    }
+}
+.cb-icon-grey {
+    background: url(images/grey.png);
+    background-size: 100%;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+.cb-icon-color {
+    background: url(images/color.png);
+    background-size: 100%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 1px;
+}
+/***Fin cabecera***/
+
+#pages-footer {
+    background-image: url("images/sellos_calidad.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center left;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 50px;
+    padding: 11px;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1029;
+    font-size: 10px;
+}
+@media (max-width: 699px) {
+    #pages-footer {
+        display: none;
+    }
+}

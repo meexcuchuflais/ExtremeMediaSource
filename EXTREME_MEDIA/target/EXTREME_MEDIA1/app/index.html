@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" ng-app="extreme-media-gary" ng-strict-di>
+<title translate>EXTREME MEDIA</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+ <!-- To disable compatibility mode in Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Mobile tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+
+    <meta name="description" content="">
+    <meta name="google" value="notranslate">
+
+<head>
+	<!--ESTILOS-->
+	<link href="../styles/kendo/kendo.common.min.css" rel="stylesheet">
+	<link href="../styles/kendo/kendo.silver.min.css" rel="stylesheet">
+	<!--<link href="../styles/bootstrap/bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<link href="../styles/kiui/kiui.min.css" rel="stylesheet" />
+	<link href="../scripts/lib/bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<link href="../scripts/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+	
+	<link id="style-ib-container" rel="stylesheet"  href="../styles/theme-container.css" />
+
+	<!--LIBRERIAS-->
+	<script type="text/javascript" src="../scripts/lib/jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/jquery/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="../scripts/lib/jquery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../scripts/lib/kendo/kendo.web.min.js"></script>
+
+
+
+	<script type="text/javascript" src="../scripts/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/angular/angular-route.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/angular/angular-translate.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/angular/angular-translate-loader-partial.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/angular/angular-translate-storage-local.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/angular/angular-translate-storage-cookie.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/angular/angular-cookies.min.js"></script>
+
+	<script type="text/javascript" src="../scripts/lib/kendo/kendo.angular.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/kiui/kiui.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script type="text/javascript" src="../scripts/lib/angular/angular-idle.js"></script>
+
+
+	<script type="text/javascript" src="../scripts/lib/ngstorage/ngStorage.js"></script>
+	<script type="text/javascript" src="../scripts/lib/angular-ui-router/release/angular-ui-router.js"></script>
+	<script type="text/javascript" src="../scripts/lib/angular-cache-buster/angular-cache-buster.js"></script>
+
+	<script type="text/javascript" src="../scripts/lib/bxslider/jquery.bxslider.min.js"></script>
+	<!--LIBRERIAS CREADAS-->
+	<script type="text/javascript" src="../scripts/lib/script/script.js"></script>
+	<script type="text/javascript" src="../app/app.module.js"></script>
+	<script type="text/javascript" src="../app/handlers/state.handler.js"></script>
+	<script type="text/javascript" src="../app/app.constants.js"></script>
+
+	<script type="text/javascript" src="../app/service/authentication.service.js"></script>
+	<script type="text/javascript" src="../app/service/user.service.js"></script>
+	
+	<script type="text/javascript" src="../views/login/login.controller.js"></script>
+	<script type="text/javascript" src="../views/home/fna/home.controller.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div id="container-wrapper">
+        <header ui-view="header" ng-cloak>
+            <div id="header-content" ng-include="'../app/views/container-header.html'"/>
+        </header>
+        <main class="well">
+            <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                <div ng-view></div>
+        </main>
+
+        <footer ng-cloak>
+            <div id="footer-content" ng-include="'../app/views/container-footer.html'"/>
+        </footer>
+        </div>
+        
+        
+        
+        
+
+	
+
+
+</body>
+
+</html>

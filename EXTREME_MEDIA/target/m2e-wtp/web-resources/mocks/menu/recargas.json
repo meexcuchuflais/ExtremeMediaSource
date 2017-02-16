@@ -1,0 +1,77 @@
+{
+  "result": true,
+  "data": {
+    "MenuItems": [
+      {
+        "id": 1,
+        "name": "ADMINISTRACION",
+        "url": null,
+        "children": [
+          {
+            "id": 4,
+            "name": "Usuario",
+            "url": "../html",
+            "children": null
+          },
+		  {
+            "id": 5,
+            "name": "Rol",
+            "url": "../html",
+            "children": null
+          },
+		  {
+            "id": 6,
+            "name": "Perfil",
+            "url": "../views/perfil/perfil.html",
+            "children": null
+          },
+		  {
+            "id": 7,
+            "name": "Usuario Perfil",
+            "url": "../html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "PRODUCTO",
+        "url": null,
+        "children": [
+          {
+            "id": 8,
+            "name": "Recargas",
+            "url": "/InternetBanking/#/facadeview",
+            "children": null
+          },
+		  {
+            "id": 11,
+            "name": "Agregar producto",
+            "url": "../views/product/product.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "REPORTES",
+        "url": null,
+        "children": [
+          {
+            "id": 9,
+            "name": "Diario",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbCESSolicitudesRetCes.cargarPagina.html",
+            "children": null
+          },
+          {
+            "id": 10,
+            "name": "Fechas",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbCESEstadoCuenta.cargarPagina.html",
+            "children": null
+          }
+        ]
+      }
+	  ]
+	  },
+  "messages": []
+}

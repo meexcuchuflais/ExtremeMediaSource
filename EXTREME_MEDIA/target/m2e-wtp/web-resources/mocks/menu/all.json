@@ -1,0 +1,252 @@
+{
+  "result": true,
+  "data": {
+    "listUserDto": [
+      {
+        "id": 8,
+        "name": "SEGURIDAD Y ADMINISTRACIÓN",
+        "url": null,
+        "children": [
+          {
+            "id": 11,
+            "name": "Cambio código de acceso",
+            "url": "FNENE%2FASCLA%2FT_ASCLA_94_CBOCO51%2F1.0.0%2FVC_CBOCO51_MIDCC_524_TASK.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 56,
+        "name": "INFORMACIÓN PERSONAL",
+        "url": null,
+        "children": [
+          {
+            "id": 43,
+            "name": "ACTUALIZACIÓN DATOS",
+            "url": "/InternetBanking/#/facadeview",
+            "children": null
+          },
+          {
+            "id": 67,
+            "name": "INFORMACIÓN CORRESPONDENCIA",
+            "url": "/InternetBanking/#/login",
+            "children": null
+          },
+          {
+            "id": 68,
+            "name": "INFORMACIÓN GENERAL",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbInfoPersonalInfoGeneral.cargarPagina.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "name": "CESANTÍAS",
+        "url": null,
+        "children": [
+          {
+            "id": 57,
+            "name": "ESTADO DE TRÁMITES",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbCESSolicitudesRetCes.cargarPagina.html",
+            "children": null
+          },
+          {
+            "id": 58,
+            "name": "ESTADO CUENTA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbCESEstadoCuenta.cargarPagina.html",
+            "children": null
+          },
+          {
+            "id": 87,
+            "name": "EXTRACTO CESANTÍAS",
+            "url": "FNENE%2FCSANT%2FT_CSANT_32_ECNDI87%2F1.0.0%2FVC_ECNDI87_CCAES_123_TASK.html",
+            "children": null
+          },
+          {
+            "id": 104,
+            "name": "CONSULTA MOVIMIENTOS",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbCESMovConsCuentas.cargarPagina.html",
+            "children": null
+          },
+          {
+            "id": 128,
+            "name": "RETIRO DE CESANTÍAS",
+            "url": "UASIA%2FPRISA%2FT_PRISA_78_RMNXE68%2F1.0.0%2FVC_RMNXE68_SMETL_878_TASK.html",
+            "children": null
+          },
+          {
+            "id": 129,
+            "name": "ELIMINAR TRÁMITE",
+            "url": "MOJPO%2FTLLRS%2FT_TLLRS_79_OEXTR02%2F1.0.0%2FVC_OEXTR02_MECEE_081_TASK.html",
+            "children": null
+          },
+          {
+            "id": 165,
+            "name": "FORMULARIO RETIRO CESANTÍAS",
+            "url": "FNENE%2FCSANT%2FT_CSANT_11_UIORE23%2F1.0.0%2FVC_UIORE23_OIDNI_287_TASK.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "name": "AHORRO VOLUNTARIO",
+        "url": null,
+        "children": [
+          {
+            "id": 63,
+            "name": "INFORMACIÓN CUENTA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbInformacionInfoCuentasAV.consultarCuentasAV.html",
+            "children": null
+          },
+          {
+            "id": 64,
+            "name": "MOVIMIENTOS CUENTA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbInformacionMovCuentasAV.consultarCuentasAV.html",
+            "children": null
+          },
+          {
+            "id": 65,
+            "name": "EXTRACTOS CUENTA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbExtractosCuentasAV.consultarCuentasAV.html",
+            "children": null
+          },
+          {
+            "id": 107,
+            "name": "REIMPRESIÓN CONSIGNACIÓN",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbReimpresionConsignacion.consultarCuentaAV.html",
+            "children": null
+          },
+          {
+            "id": 110,
+            "name": "PUNTOS DE PAGO",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbInformacionPuntosPago.consultarPuntosPago.html",
+            "children": null
+          },
+          {
+            "id": 113,
+            "name": "TRÁMITE DE PAGO",
+            "url": "FNENE%2FAHOVL%2FT_AHOVL_50_TRAIO87%2F1.0.0%2FVC_TRAIO87_RATPG_916_TASK.html",
+            "children": null
+          },
+          {
+            "id": 119,
+            "name": "CERTIFICACIÓN CUENTA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbCertificadoCuentaAV.consultarCuentaAV.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "name": "CRÉDITO",
+        "url": null,
+        "children": [
+          {
+            "id": 61,
+            "name": "ESTADO DE TRÁMITES",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbInformacionTramites.consultarEstadoTramites.html",
+            "children": null
+          },
+          {
+            "id": 86,
+            "name": "CÁLCULO PUNTAJE",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbCalcularPuntaje.calcularPuntajeCredito.html",
+            "children": null
+          },
+          {
+            "id": 176,
+            "name": "SOLICITAR CRÉDITO DE VIVIENDA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbConsultaInfoPreaprobadoBanlinea.cargarPaginaPorVivienda.html",
+            "children": null
+          },
+          {
+            "id": 177,
+            "name": "SOLICITAR CRÉDITO EDUCATIVO",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbConsultaInfoPreaprobadoBanlinea.cargarPaginaPorEducativo.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 166,
+        "name": "AGENDAMIENTO DE CITAS",
+        "url": null,
+        "children": [
+          {
+            "id": 167,
+            "name": "AGENDAR CITA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbAgendamientoAfiliado.cargarPagina.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 171,
+        "name": "CARTERA",
+        "url": null,
+        "children": [
+          {
+            "id": 172,
+            "name": "CONSULTA DE CRÉDITOS",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbInformacionCreditos.consultarCreditos.html",
+            "children": null
+          },
+          {
+            "id": 173,
+            "name": "SOLICITUD APP CESANTIAS",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbSolicitudAplicacionCes.cargarPagina.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 174,
+        "name": "PAGOS EN LINEA",
+        "url": null,
+        "children": [
+          {
+            "id": 175,
+            "name": "PAGAR EN LINEA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbPagoEnLinea.cargarPagina.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 178,
+        "name": "SOLICITAR CRÉDITO",
+        "url": "VMDUE/VDITE/T_VDITE_27_PCDSK81/1.0.0/mbConsultaInfoPreaprobadoBanlinea.cargarPagina.html",
+        "children": [
+          {
+            "id": 179,
+            "name": "CRÉDITO DE VIVIENDA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbConsultaInfoPreaprobadoBanlinea.cargarPaginaPorVivienda.html",
+            "children": null
+          },
+          {
+            "id": 180,
+            "name": "CRÉDITO EDUCATIVO",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbConsultaInfoPreaprobadoBanlinea.cargarPaginaPorEducativo.html",
+            "children": null
+          }
+        ]
+      },
+      {
+        "id": 183,
+        "name": "LIBRANZA",
+        "url": null,
+        "children": [
+          {
+            "id": 184,
+            "name": "GESTIONAR LIBRANZA",
+            "url": "VMDUE%2FVDITE%2FT_VDITE_27_PCDSK81%2F1.0.0%2FmbGestionarLibranza.cargarPaginaPoliticas.html",
+            "children": null
+          }
+        ]
+      }
+    ]
+  },
+  "messages": []
+}
